@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table class="inicio">
+        <tr class="linha">
+            <td class="form">
+                <form id="formulario" action="enviar()" method="post">
+                    <label for="nome" id="nome">Nome</label>
+                    <input type="text" placeholder="Digite seu nome" name="nome" id="nome">
+                    <label for="fone">e-Mail</label>
+                    <input type="text" placeholder="Digite seu e-mail" name="e-mail" id="e-mail">
+                    <label for="fone">Fone de contato</label>
+                    <input type="text" placeholder="Digite seu número" name="fone" id="fone">
+                    <label for="data_cadastro">Data de cadastro</label>
+                    <input type="text" placeholder="Digite a data de cadastro" name="data_cadastro" id="data_cadastro">
+                    <label for="tipo_contato">Selecione a forma de contato</label>
+                    <input type="text" placeholder="Digite a forma de contato" name="tipo_contato" id="tipo_contato">
+                    <label for="mensagem">Escreva sua mensagem</label>
+                    <textarea></textarea>
+                    <div class="btn" id="btn">
+                        <input id="enviar" type="submit">
+                        <input type="reset">
+                    </div>
+                </form>
+            </td>
+            <td class="estr_grid">
+                <table id="grid">
+                    <tr id="grid_linha">
+                        <td id="g_nome">Nome</td>
+                        <td id="g_email">E-mail</td>
+                        <td id="g_fone">Fone</td>
+                        <td id="g_cadastro">Cadastro</td>
+                        <td id="g_contato">Tipo contato</td>
+                        <td id="g_mensagem">Mensagem</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="form.js"></script>
+</body>
+
+</html>
